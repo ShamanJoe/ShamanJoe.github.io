@@ -40,7 +40,7 @@
 						<section id="contact">
 							<div class="inner">
 								<section>
-									<form onsubmit="sendEmail(); reset(); return false;" >
+									<form method="post" onsubmit="sendEmail(); reset(); return false;" >
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -87,11 +87,11 @@
 			</div>
 
 		<!-- Scripts -->
-		<script> src="https://smtpjs.com/v3/smtp.js"</script>
+		
 		<script>
 			function sendEmail(){
 				Email.send({
-					SecureToken: "6c7cdece-2414-430d-ab5c-96a88271670c",
+					SecureToken: "e569e2b5-011c-4e2f-abc7-925d42c8cc61",
 					to : 'jonathansolheim@outlook.com',
 					from: document.getElementById("email").value,
 					subject: "New contact form enquiry",
@@ -103,7 +103,7 @@
 				);
 			}
 		</script>
-			
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
